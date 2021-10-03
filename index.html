@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Biblioteca Virtual</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="/css/style.css" as="style">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Biblioteca Virtual <span>Ahoy</span></h1>
+    </header>
+
+    <div class="nav-bg">
+      <nav class="principal-nav container">
+        <a href="/">Inicio</a>
+        <a href="books.html">Libros Disponibles</a>
+        <a href="mybooks.html">Tus libros</a>
+        <a href="login.html">Logeate</a>
+        <a href="register.html">Registrate</a>
+      </nav>
+
+    </div>
+
+    <section class="hero">
+        <div class="content-hero">
+
+        <h2>Bienvenido a la Biblioteca Ahoy</h2>
+
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <circle cx="12" cy="11" r="3" />
+          <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+          </svg>
+        Santiago, Chile</p>
+
+        <a class="button" href="#">Registrate</a>
+
+      </div>
+    </section>
+
+
+    <main class="container shadow">
+      <h2>Servicios disponibles</h2>
+
+        <div class="services">
+          <section class="service">
+            <h3>Vista de libros disponibles</h3>
+            <div class="icons">
+
+            <a href="books.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bookmark" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2" />
+            </svg></a>
+          </div>
+          </section>
+
+          <section class="service">
+            <h3>Solicitar/Devolver libros</h3>
+            <div class="icons">
+
+            <a href="login.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+              <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+              <line x1="3" y1="6" x2="3" y2="19" />
+              <line x1="12" y1="6" x2="12" y2="19" />
+              <line x1="21" y1="6" x2="21" y2="19" />
+            </svg></a>
+          </div>
+          </section>
+
+          <section class="service">
+            <h3>Ver libros a tu nombre</h3>
+            <div class="icons">
+
+            <a href="mybooks.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-notebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" />
+              <line x1="13" y1="8" x2="15" y2="8" />
+              <line x1="13" y1="12" x2="15" y2="12" />
+            </svg></a>
+          </div>
+          </section>
+        </div>
+
+
+    <section>
+      <h2>Consulta Datos</h2>
+
+      <form class="formulary" action="/" method="post">
+
+        <fieldset>
+
+          <legend>Consulte sus datos llenando los campos</legend>
+
+            <div class="container-fieldset">
+
+            <div class="fieldset">
+              <label for="">Nombre</label>
+              <input class="input-text" type="text" name="name" placeholder="Tu nombre">
+            </div>
+
+            <div class="fieldset">
+              <label for="">Telefono</label>
+              <input class="input-text" type="tel" name="" placeholder="+569XXXXXXXX">
+            </div>
+
+            <div class="fieldset">
+              <label for="">Correo</label>
+              <input class="input-text" type="mail" name="" placeholder="correo@correo.com">
+            </div>
+
+            <div class="fieldset">
+              <label for="">Comentario</label>
+              <textarea class="input-text" name="comment"></textarea>
+            </div>
+          </div>
+
+          <div class="submit w-100 align-right flex">
+            <input class="button" type="submit" name="" value="Enviar">
+          </div>
+
+        </fieldset>
+
+      </form>
+
+    </section>
+  </main>
+
+    <footer><p>Todos los derechos reservados.</p></footer>
+  </body>
+</html>
